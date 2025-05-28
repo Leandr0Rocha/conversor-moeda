@@ -11,7 +11,7 @@ Uma aplicação gráfica simples para conversão de moedas, desenvolvida em Pyth
 - Exibição da taxa de conversão utilizada.
 - Caixa de entrada e seleção com cantos arredondados.
 
-![image](https://github.com/user-attachments/assets/b8ab7c1f-aaef-4f7d-8f79-a89fa6bbc25d)
+![image](https://github.com/user-attachments/assets/050a8226-a3ca-4a7b-9575-08431910f6d6)
 
 ## Como usar
 
