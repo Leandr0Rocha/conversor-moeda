@@ -1,10 +1,16 @@
 import customtkinter as ctk
 import requests
+import os
+from dotenv import load_dotenv
+
+# Carregar variáveis de ambiente do arquivo .env
+load_dotenv()
 
 MOEDAS = ['USD', 'BRL', 'EUR', 'GBP', 'JPY', 'AUD', 'CAD', 'CHF', 'CNY', 'SEK', 'NZD']
 
 def buscar_taxa(base, destino):
-    API_KEY = 'fca_live_f9qN2Vb85mPM7bQfhh6dxphe4zcwuS95hhc71Loz'
+    ''' Busca a taxa de conversão entre duas moedas usando a API FreeCurrencyAPI. '''
+    API_KEY = os.getenv('API_KEY')
     url = f'https://api.freecurrencyapi.com/v1/latest?apikey={API_KEY}&base_currency={base}&currencies={destino}'
     try:
         resposta = requests.get(url)
@@ -16,6 +22,7 @@ def buscar_taxa(base, destino):
         return None
 
 def mostrar_resultado(mensagem):
+    ''' Cria uma janela de resultado com a mensagem fornecida. '''
     resultado = ctk.CTkToplevel(janela)
     resultado.title("Resultado")
     resultado.geometry("500x200")
@@ -58,6 +65,7 @@ def mostrar_resultado(mensagem):
     resultado.geometry(f"{largura}x{altura}+{x}+{y}")
 
 def converter_valor():
+    ''' Converte o valor informado de uma moeda para outra. '''
     try:
         valor = float(valor_var.get())
         moeda_origem = moeda_origem_var.get()

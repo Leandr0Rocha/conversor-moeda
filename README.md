@@ -21,6 +21,16 @@ Uma aplicação gráfica simples para conversão de moedas, desenvolvida em Pyth
    python app.py
    ```
 
+## Configuração da chave da API
+
+Crie um arquivo `.env` na raiz do projeto com o seguinte conteúdo:
+
+```
+API_KEY=sua_chave_aqui
+```
+
+Substitua `sua_chave_aqui` pela sua chave da Free Currency API. Para gerar uma chave é necessário se cadastrar no site da API.
+
 ## API utilizada
 
 - [Free Currency API](https://freecurrencyapi.com/)
