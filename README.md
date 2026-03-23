@@ -1,65 +1,33 @@
-# Conversor de Moedas
+# Currency Converter
 
-![image](https://github.com/user-attachments/assets/f1db2799-e4a3-4eb4-9aea-d1556038d3ea)
+## Introduction
+This is a currency converter application that allows you to convert amounts from one currency to another.
 
-Uma aplicação gráfica simples para conversão de moedas, desenvolvida em Python utilizando [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) para uma interface moderna e estilizada.
+## Features
+- Real-time exchange rates.
+- User-friendly interface.
+- Support for multiple currencies.
 
-## Funcionalidades
-
-- Conversão entre diversas moedas internacionais.
-- Interface amigável e responsiva.
-- Exibição da taxa de conversão utilizada.
-- Caixa de entrada e seleção com cantos arredondados.
-
-![image](https://github.com/user-attachments/assets/050a8226-a3ca-4a7b-9575-08431910f6d6)
-
-## Como usar
-
-1. **Clone o repositório** e acesse a pasta do projeto.
-2. **Instale as dependências**:
-   ```
-   pip install -r requirements.txt
-   ```
-3. **Execute o aplicativo**:
-   ```
-   python app.py
-   ```
-
-## Configuração da chave da API
-
-Crie um arquivo `.env` na raiz do projeto com o seguinte conteúdo:
-
-```
-API_KEY=sua_chave_aqui
+## Installation
+To install the application, clone the repository:
+```bash
+git clone https://github.com/Leandr0Rocha/conversor-moeda.git
 ```
 
-Substitua `sua_chave_aqui` pela sua chave da Free Currency API. Para gerar uma chave é necessário se cadastrar no site da API.
+Then navigate into the directory and install dependencies:
+```bash
+cd conversor-moeda
+npm install
+```
 
-## API utilizada
+## Usage
+Run the application using the following command:
+```bash
+npm start
+```
 
-- [Free Currency API](https://freecurrencyapi.com/)
+## Contributing
+Feel free to fork the repository and submit pull requests for improvements.
 
-A Free Currency API foi utilizada para obter as taxas de câmbio em tempo real entre as moedas selecionadas. O projeto faz uma requisição HTTP para a API sempre que o usuário solicita uma conversão, garantindo que os valores estejam sempre atualizados. O uso da API proporcionou aprendizado prático sobre como consumir serviços externos em Python, lidar com requisições HTTP, tratamento de respostas JSON e gerenciamento de possíveis erros de conexão ou dados.
-
-## Interface gráfica
-
-A interface foi construída com CustomTkinter, uma extensão moderna do Tkinter que permite criar componentes visuais mais bonitos e personalizáveis, como caixas de entrada e botões com cantos arredondados e cores customizadas. O desenvolvimento da interface gráfica proporcionou experiência com posicionamento absoluto e relativo de widgets, manipulação de eventos (como cliques de botões), centralização de janelas e aplicação de estilos para melhorar a experiência do usuário.
-
-## Vídeo utilizado como base
-
-- [YouTube: Conversor de Moedas (em inglês)](https://youtu.be/zT7niRUOs9o?si=7joc0xuNQ4b_BPH9)
-
----
-
-## Aprendizados
-
-Ao realizar este projeto, foi possível aprofundar conhecimentos em:
-
-- Consumo de APIs REST em Python.
-- Manipulação de dados JSON.
-- Tratamento de exceções e mensagens de erro para o usuário.
-- Criação de interfaces gráficas modernas e responsivas com CustomTkinter.
-- Organização do código em funções reutilizáveis e separação de responsabilidades.
-- Melhoria da experiência do usuário com feedback visual e centralização de janelas.
-
-Este projeto é uma ótima base para quem deseja aprender integração entre Python, APIs externas e interfaces gráficas, além de boas práticas de usabilidade.
+## License
+This project is licensed under the MIT License.
